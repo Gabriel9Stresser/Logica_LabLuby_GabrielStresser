@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LabLuby | Teste de Lógica</title>
+
+	<link rel="stylesheet" href="css/Logica_LabLuby.css">
+
+</head>
+<body>
+
+	<header class="cabecalho">
+		<div class="container">
+            <img src="./img/logo.png" alt="Logo Luby">
+			<h1 class="cabecalho-titulo">
+				<a href="#">Teste de Lógica LabLuby_Gabriel Stresser</a>
+			</h1>
+	</header>
+
+	<main class="conteudoPrincipal">
+        <div class="container2">
+
+          <div class="atividade">
+                <div class=fakeMenu>
+                    <div class="fakeButtons fakeClose"></div>
+                    <div class="fakeButtons fakeMinimize"></div>
+                    <div class="fakeButtons fakeZoom"></div>
+                  </div>
+                  <div class="fakeScreen">
+                    <h1>1) Implemente um método que crie um novo array baseado nos valores passados.
+                        Entradas do método (3,a), Resultado do método: ['a', 'a', 'a']</h1>
+                        <p>function newText(quantity, element) {</br></br>
+
+                            return Array(quantity).fill(element);</br></br>
+                        
+                        }</br></br>
+                        
+                        Newtext(3, 'a');</p>
+
+                    </div>  
+                 </div>
+
+          <div class="atividade">
+            <div class=fakeMenu>
+                <div class="fakeButtons fakeClose"></div>
+                <div class="fakeButtons fakeMinimize"></div>
+                <div class="fakeButtons fakeZoom"></div>
+              </div>
+              <div class="fakeScreen">
+                <h1>2) Implemente um método que inverta um array, não utilize métodos nativos do array.
+                Entrada do método ([1,2,3,4]), Resultado do método: [4,3,2,1]</h1>
+
+                <p>const exercicio2= {</br>
+                    exercicio(a){</br>
+                        var l = a.length</br>
+                        var i1 = null;</br>
+                        var i2 = null;</br>
+                        for (i1 = 0, i2 = l - 1; i1 < i2; i1 += 1, i2 -= 1) {</br>
+                            var temporary = a[i1];</br>
+                            a[i1] = a[i2];</br>
+                            a[i2] = temporary;</br>
+                        }</br>
+                        return a</br>
+                    }</br>
+                }</br></br>
+                
+                console.log(exercicio2.exercicio([1,2,3,4]));</p>
+          </div>
+          </div>
+
+          <div class="atividade">
+            <div class=fakeMenu>
+                <div class="fakeButtons fakeClose"></div>
+                <div class="fakeButtons fakeMinimize"></div>
+                <div class="fakeButtons fakeZoom"></div>
+              </div>
+              <div class="fakeScreen">
+                <h1>3) Implemente um método que limpe os itens desnecessários de um array (false, undefined, strings vazias, zero, null).
+                Entrada do método ([1,2,'', undefined]), Resultado do método: [1,2]</h1>
+                <p>
+                    const exercicio3={</br></br>
+    
+
+                        exercicio(a){</br></br>
+                    
+                            for(i=0;i<a.length;i++){ </br></br>
+                    
+                                if(a[i]===''|| a[i]===undefined ||a[i]=== false||a[i]===null||a[i]==0) { a[i]='remova'}</br>
+                            }</br>
+                            let busca='remova'</br>
+                            let indice=a.indexOf(busca)</br>
+                            while(indice>=0){</br>
+                                a.splice(indice, 1);</br>
+                                indice = a.indexOf(busca)</br>
+                            }</br>
+                            return a</br>
+                        }</br>
+                    }</br></br>
+                    
+                    console.log(exercicio3.exercicio([1,2,null,undefined,6,9,'',false]))
+                </p>
+            </div></div>
+
+            <div class="atividade">
+                <div class=fakeMenu>
+                    <div class="fakeButtons fakeClose"></div>
+                    <div class="fakeButtons fakeMinimize"></div>
+                    <div class="fakeButtons fakeZoom"></div>
+                  </div>
+                  <div class="fakeScreen">
+                    <h1>4) Implemente um método que a partir de um array de arrays, converta em um objeto com chave e valor.
+                Entrada do método ([["c",2],["d",4]]), Resultado do métdodo: {c:2, d:4}</h1>
+                <p>function method4() {</br>
+                    const arrayOfArrays4 = [["c",2],["d",4]];</br></br>
+                  
+                    const newArray4 = Object.fromEntries(arrayOfArrays4);</br></br>
+                  
+                    console.log(newArray4)</br>
+                    return newArray4</br>
+                  }</br></br>
+                  
+                  method4()</p>
+
+              </div></div>
+
+              <div class="atividade">
+                <div class=fakeMenu>
+                    <div class="fakeButtons fakeClose"></div>
+                    <div class="fakeButtons fakeMinimize"></div>
+                    <div class="fakeButtons fakeZoom"></div>
+                  </div>
+                  <div class="fakeScreen">
+                    <h1>5) Implemente um método que retorne um array, sem os itens passados por parâmetro depois do array de entrada. Entrada do método ([5,4,3,2,5], 5,3), Resultado do método: [4,2]</h1>
+                    <p>
+                        const exercicio5={</br></br></br>
+    
+
+                            exercicio(a=[],b=0,c=0){</br></br>
+                        
+                                for(i=0;i<a.length;i++){ </br></br>
+                        
+                                    if(a[i]===b|| a[i]===c) { a[i]='excluir'}</br>
+                                }</br>
+                                let busca='excluir'</br>
+                                let indice=a.indexOf(busca)</br>
+                                while(indice>=0){</br>
+                                    a.splice(indice, 1);</br>
+                                    indice = a.indexOf(busca)</br>
+                                }</br>
+                                return a</br>
+                            }</br>
+                        }</br></br>
+                        
+                        console.log(exercicio5.exercicio([5,4,3,2,5],5,3))
+                    </p>
+          </div></div>
+
+          <div class="atividade">
+            <div class=fakeMenu>
+                <div class="fakeButtons fakeClose"></div>
+                <div class="fakeButtons fakeMinimize"></div>
+                <div class="fakeButtons fakeZoom"></div>
+              </div>
+              <div class="fakeScreen">
+                <h1>6) Implemente um método que retorne um array, sem valores duplicados.
+                Entrada do método ([1,2,3,3,2,4,5,4,7,3]), Resultado do método: [1,2,3,4,5,7]</h1>
+                <p>
+                    const exercicio6={</br></br></br>
+    
+
+                        exercicio(a){</br>
+                            var res= a.filter((este, i) => a.indexOf(este) === i);</br>
+                            return res</br>
+                        }</br>
+                    }</br></br>
+                    
+                    console.log(exercicio6.exercicio([1,2,3,3,2,4,5,4,7,3])) 
+                </p>
+          </div></div>
+
+          <div class="atividade">
+            <div class=fakeMenu>
+                <div class="fakeButtons fakeClose"></div>
+                <div class="fakeButtons fakeMinimize"></div>
+                <div class="fakeButtons fakeZoom"></div>
+              </div>
+              <div class="fakeScreen">
+                <h1>7) Implemente um método que compare a igualdade de dois arrays e retorne um valor booleano.
+                Entrada do método ([1,2,3,4],[1,2,3,4]), Resultado do método: true</h1>
+                <p>
+                    const exercicio7={</br>
+                    exercicio(a,b){</br>
+                        if(a.length==b.length){</br>
+                            for(i=0;i<a.length;i++){</br>
+                                if(a[i]==b[i]){}</br></br>
+                
+                                else return false</br>
+                            }</br>
+                            return true</br>
+                        }</br>
+                        else return false</br>
+                    }</br></br>
+                }</br></br>
+                
+                console.log(exercicio7.exercicio([1,2,3,4],[1,2,3,4]))</br>
+                console.log(exercicio7.exercicio([1,2,3,4],[1,2,3,3]))</br>
+            </p>
+          </div></div>
+
+          <div class="atividade">
+            <div class=fakeMenu>
+                <div class="fakeButtons fakeClose"></div>
+                <div class="fakeButtons fakeMinimize"></div>
+                <div class="fakeButtons fakeZoom"></div>
+              </div>
+              <div class="fakeScreen">
+                <h1>8) Implemente um método que remova os aninhamentos de um array de arrays para um array unico.
+                Entrada do método ([1, 2, [3], [4, 5]]), Resultado do método: [1, 2, 3, 4, 5]</h1>
+                <p>const exercicio8={</br></br></br>
+    
+
+                    exercicio(a){</br>
+                
+                        var res = a.reduce((list, sub) => list.concat(sub), [])</br>
+                        return res</br>
+                    }</br>
+                }</br></br>
+                
+                console.log(exercicio8.exercicio([1,2,[3],[4,5]]))</p>
+            </div></div>
+
+            <div class="atividade">
+                <div class=fakeMenu>
+                    <div class="fakeButtons fakeClose"></div>
+                    <div class="fakeButtons fakeMinimize"></div>
+                    <div class="fakeButtons fakeZoom"></div>
+                  </div>
+                  <div class="fakeScreen">
+                    <h1>9) Implemente um método divida um array por uma quantidade passada por parâmetro.
+                Entrada do método ([1, 2, 3, 4, 5], 2), Resultado do método: [[1, 2], [3, 4], [5]]</h1>
+                <p>
+                    function divideArray(array, qtd){</br>
+                        const newArr = [];</br>
+                        while(array.length !== 0){</br>
+                            newArr.push(array.splice(0, qtd));</br>
+                        }</br>
+                    </br>
+                        return newArr;</br>
+                    }</br></br>
+                    
+                    console.log(divideArray([1, 2, 3, 4, 5], 2))</br>
+                </p>
+            </div></div>
+
+            <div class="atividade">
+                <div class=fakeMenu>
+                    <div class="fakeButtons fakeClose"></div>
+                    <div class="fakeButtons fakeMinimize"></div>
+                    <div class="fakeButtons fakeZoom"></div>
+                  </div>
+                  <div class="fakeScreen">
+                    <h1>10) Implemente um método que encontre os valores comuns entre dois arrays.
+                Entrada do método ([6, 8], [8, 9]), Resultado do método: [8]</h1>
+                <p>const exercicio10 ={exercicio(r1,r2) {</br></br>
+   
+                    var diferencas</br>
+                        var apenasNoR1 = r1.filter(function (element, index, array) {</br>
+                            if(r2.indexOf(element) != -1)</br>
+                                return element;</br>
+                        });</br>
+                        return  diferencas = apenasNoR1 </br>
+                    }</br>
+                    }</br></br>
+                    
+                    console.log(exercicio10.exercicio([6,8],[8,9]));</p>
+                
+           </div></div>
+
+
+           </div>
+        </div>
+	</main>
+</body>
+</html>
