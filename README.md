@@ -7,3 +7,23 @@ Link para acessar o projeto: https://labluby-gabrielstresser.netlify.app/
 
 ![Teste LabLuby](https://user-images.githubusercontent.com/65667183/109294658-3ccde800-780c-11eb-8dfb-bbbfc41a4e61.PNG)
 
+## 🧪 Technologies
+
+O projeto foi criado seguindo as tecnologias a seguir:
+
+- [HTML](https://html.org/)
+- [CSS](https://css.org)
+
+## 🔥 Preview
+
+[![Deploy with netlify](https://netlify.com/button)](https://labluby-gabrielstresser.netlify.app/)
+
+## 🚀 Getting started
+
+Siga os passos a seguir para clonar esse projeto:
+
+```bash
+$ git clone https://github.com/Gabriel9Stresser/GoGym---nlw4.git && cd GoGym---nlw4
+```
+
+<p align="center">Made with 💜 by Gabriel Stresser</p>
